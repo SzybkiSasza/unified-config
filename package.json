@@ -2,13 +2,15 @@
   "name": "unified-config",
   "version": "0.1.0",
   "description": "Merges static config with environment variables",
-  "main": "index.js",
+  "main": "lib/config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "test": "mocha test/*.test.js",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha test/*.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SzybkiSasza/unifiedConfig.git"
+    "url": "git+https://github.com/SzybkiSasza/unified-config.git"
   },
   "keywords": [
     "config",
@@ -19,7 +21,16 @@
   "author": "Bartosz Polanczyk",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SzybkiSasza/unifiedConfig/issues"
+    "url": "https://github.com/SzybkiSasza/unified-config/issues"
   },
-  "homepage": "https://github.com/SzybkiSasza/unifiedConfig#readme"
+  "homepage": "https://github.com/SzybkiSasza/unified-config#readme",
+  "dependencies": {
+    "lodash": "^4.6.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.3.0",
+    "eslint-config-google": "^0.4.0",
+    "istanbul": "^0.4.2"
+  }
 }

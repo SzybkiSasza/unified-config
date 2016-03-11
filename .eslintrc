@@ -1,0 +1,11 @@
+{
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "extends": "google",
+  "rules": {
+    "linebreak-style": 0
+  }
+}
