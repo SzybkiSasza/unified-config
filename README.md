@@ -79,7 +79,7 @@ Library uses ES6 classes. In order to start using it, instance has to be constru
 
     var unifiedConfig = new Config(envConfig, commonConfig);
     unifiedConfig.getConfig(); // Returns one configuration file
-    // or error if config variable wasn't provided
+    // or error if required ENV config variable wasn't provided
 ```
 
 ## Scripts
